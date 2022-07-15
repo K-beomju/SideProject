@@ -30,10 +30,10 @@ public class SoundManager : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<SoundManager>(); 
-                if (instance == null) 
+                instance = FindObjectOfType<SoundManager>();
+                if (instance == null)
                 {
-                    instance = new GameObject(typeof(SoundManager).ToString()).AddComponent<SoundManager>(); 
+                    instance = new GameObject(typeof(SoundManager).ToString()).AddComponent<SoundManager>();
                 }
             }
 
@@ -54,7 +54,7 @@ public class SoundManager : MonoBehaviour
         }
         DontDestroyOnLoad(this);
 
-        foreach (var audioClip in Resources.LoadAll<AudioClip>("Sound/BGM")) 
+        foreach (var audioClip in Resources.LoadAll<AudioClip>("Sound/BGM"))
         {
             bgmSoundDic.Add(audioClip.name, audioClip);
         }
@@ -231,7 +231,7 @@ public class SoundManager : MonoBehaviour
 
     }
 
-   
+
 
 
 

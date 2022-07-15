@@ -11,7 +11,7 @@ public class UserInfoData
 
     public UserInfoData()
     {
-        _myGold = 1;
+        _myGold = 0;
     }
 }
 
